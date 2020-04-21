@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+		integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+	<title>Ofertas Halloween - CubikSystems</title>
+	<style>
+		@media (max-width: 460px) {
+			.header img {
+				width: 100%;
+			}
+
+			.product {
+				width: 100%;
+				margin: 12.5px 25px;
+			}
+
+			.container {
+				padding: 12.5px 0;
+				margin-bottom: 55px;
+			}
+
+			.top-bar {
+				display: none;
+			}
+		}
+
+		@media (min-width: 460px) {
+			.action-bar {
+				display: none;
+			}
+
+			.header {
+				margin-top: 55px;
+				background-color: #FF8810;
+				height: 451px;
+				width: 20%;
+			}
+
+			.container {
+				padding: 15px 0 15px 0;
+			}
+
+			.product {
+				margin: 15px;
+				width: 250px;
+			}
+		}
+
+		.c1 {
+			width: 10%;
+		}
+
+		.c2 {
+			width: 20%;
+		}
+
+		.c3 {
+			width: 30%;
+		}
+
+		.c4 {
+			width: 40%;
+		}
+
+		.c5 {
+			width: 50%;
+		}
+
+		.c6 {
+			width: 60%;
+		}
+
+		.c7 {
+			width: 70%;
+		}
+
+		.c8 {
+			width: 80%;
+		}
+
+		.c9 {
+			width: 90%;
+		}
+
+		.c10 {
+			width: 100%;
+		}
+
+		body {
+			width: 100%;
+			height: 100%;
+			padding: 0px;
+			margin: 0px;
+			background-color: #EBECED;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		p {
+			padding: 0;
+			margin: 0;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.header {
+			width: 100%;
+			text-align: center;
+		}
+
+		.header img {
+			display: inline-block;
+			margin: 0 auto;
+		}
+
+		.product {
+			background-color: white;
+			height: 350px;
+			padding: 0 15px 15px 15px;
+			float: left;
+			-webkit-box-shadow: 0px 0px 10px 0px #c5c5c5;
+			-moz-box-shadow: 0px 0px 10px 0px #c5c5c5;
+			box-shadow: 0px 0px 10px 0px #c5c5c5;
+		}
+
+		.product-img {
+			width: 100%;
+			height: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.product-img img {
+			width: 200px;
+			height: auto;
+		}
+
+		.product-tittle {
+			margin-bottom: 15px;
+			text-align: center;
+		}
+
+		.product-tittle p {
+			font-weight: 900;
+			font-size: 20px;
+			color: #0090C7;
+		}
+
+		.product-description {
+			height: 40px;
+			font-size: 12px;
+			text-align: center;
+		}
+
+		.product-price {
+			height: 43px;
+			margin: 0 0 5px 0;
+			text-align: center;
+			font-weight: 900;
+			font-style: italic;
+			color: #353535;
+		}
+
+		.product-price p {
+			font-size: 35px;
+		}
+
+		.product-price p s {
+			padding-left: 10px;
+			font-size: 20px;
+			font-weight: 400;
+			color: #d20000;
+		}
+
+		.product-delivery {
+			height: 20px;
+			text-align: center;
+			font-size: 15px;
+			font-weight: 700;
+			color: #b7003a;
+		}
+
+		.action-bar {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			height: 55px;
+			background-color: #ffffff;
+			-webkit-box-shadow: 0px 0px 5px 0px #c5c5c5;
+			-moz-box-shadow: 0px 0px 5px 0px #c5c5c5;
+			box-shadow: 0px 0px 5px 0px #c5c5c5;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			float: left;
+		}
+
+		.logo img {
+			width: 80%;
+		}
+
+		.whatsapp {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #ffffff;
+			width: 25%;
+			height: 100%;
+			float: left;
+			background-color: #00E676;
+			cursor: pointer
+		}
+
+		.whatsapp i {
+			font-size: 30px;
+		}
+
+		.maps {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #ffffff;
+			width: 25%;
+			height: 100%;
+			float: left;
+			background-color: #4285F4;
+		}
+
+		.maps i {
+			font-size: 30px;
+		}
+
+		.top-bar {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			height: 55px;
+			background-color: #ffffff;
+			padding: 10px 0;
+			-webkit-box-shadow: 0px 0px 15px 0px #353535;
+			-moz-box-shadow: 0px 0px 15px 0px #353535;
+			box-shadow: 0px 0px 15px 0px #353535;
+		}
+
+		.logo-top {
+			float: left;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 55px;
+		}
+
+		.logo-top img {
+			width: 250px;
+		}
+
+		.telefono-top {
+			float: left;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 55px;
+		}
+
+		.telefono-top p {
+			font-weight: 700;
+			font-size: 20px;
+			color: #353535;
+		}
+
+		.telefono-top i {
+			padding-left: 10px;
+			color: #4285F4;
+			cursor: pointer
+		}
+	</style>
+</head>
+
+<body>
+	<div class="top-bar">
+		<div class="logo-top c5">
+			<img src="img/logo.png">
+		</div>
+		<div class="telefono-top c5">
+			<p>¡Reserva tu oferta! 603 030 030</p>
+			<i class="material-icons md-18" onclick="openmaps()">directions</i>
+		</div>
+	</div>
+	<div class="header">
+		<img src="img/desktop.png">
+	</div>
+	<div class="container">
+		<div class="product">
+			<div class="product-img">
+				<img src="img/lenovo.jpg">
+			</div>
+			<div class="product-tittle">
+				<p>Lenovo V110-15AST</p>
+			</div>
+			<div class="product-description">
+				<p>AMD E2-9010 / 4GB RAM DDR4 / 500 GB HDD / 15.6" HD LED / Windows 10 Home</p>
+			</div>
+			<div class="product-price">
+				<p class="price-1">309€<s style="font-size: 20px;">321€</s></p>
+			</div>
+			<div class="product-delivery">
+				<p>¡Resérvalo ya!</p>
+			</div>
+		</div>
+
+		<div class="product">
+			<div class="product-img">
+				<img src="img/silla.jpg">
+			</div>
+			<div class="product-tittle">
+				<p>Silla Gaming Factor+</p>
+			</div>
+			<div class="product-description">
+				<p>Esta silla es la aliada perfecta para tus sesiones de juego o stream</p>
+			</div>
+			<div class="product-price">
+				<p class="price-1">135€<s style="font-size: 20px;">150€</s></p>
+			</div>
+			<div class="product-delivery">
+				<p>¡Resérvalo ya!</p>
+			</div>
+		</div>
+
+		<div class="product">
+			<div class="product-img">
+				<img src="img/dt50.jpg">
+			</div>
+			<div class="product-tittle">
+				<p>Memoria USB 16Gb</p>
+			</div>
+			<div class="product-description">
+				<p>Diseño compacto, ligero y sin capuchón con carcasa metálica. USB 3.1</p>
+			</div>
+			<div class="product-price">
+				<p class="price-1">4,90€<s style="font-size: 20px;">6,5€</s></p>
+			</div>
+			<div class="product-delivery">
+				<p>¡Resérvalo ya!</p>
+			</div>
+		</div>
+
+		<div class="product">
+			<div class="product-img">
+				<img src="img/kenon.jpg">
+			</div>
+			<div class="product-tittle">
+				<p>Krom Kenon RGB</p>
+			</div>
+			<div class="product-description">
+				<p>Kenon aúna diseño y agarre para hacer de cada batalla una experiencia única.</p>
+			</div>
+			<div class="product-price">
+				<p class="price-1">21,50€<s style="font-size: 20px;">24,99€</s></p>
+			</div>
+			<div class="product-delivery">
+				<p>¡Resérvalo ya!</p>
+			</div>
+		</div>
+
+		<div class="product">
+			<div class="product-img">
+				<img src="img/kolt.jpg">
+			</div>
+			<div class="product-tittle">
+				<p>Krom Kolt RGB</p>
+			</div>
+			<div class="product-description">
+				<p>Ofrece la mejor precisión con diseño ambidiestro, el arma imprescindible.</p>
+			</div>
+			<div class="product-price">
+				<p class="price-1">21,50€<s style="font-size: 20px;">24,99€</s></p>
+			</div>
+			<div class="product-delivery">
+				<p>¡Resérvalo ya!</p>
+			</div>
+		</div>
+		<div class="product">
+			<div class="product-img">
+				<img src="img/krown.png">
+			</div>
+			<div class="product-tittle">
+				<p>Krom Krown</p>
+			</div>
+			<div class="product-description">
+				<p>Teclado multicolor gaming. Iluminación en naranja, azul o morado.</p>
+			</div>
+			<div class="product-price">
+				<p class="price-1">22€<s style="font-size: 20px;">24,99€</s></p>
+			</div>
+			<div class="product-delivery">
+				<p>¡Resérvalo ya!</p>
+			</div>
+		</div>
+		<div class="product">
+			<div class="product-img">
+				<img src="img/kodex.png">
+			</div>
+			<div class="product-tittle">
+				<p>Krom Kodex</p>
+			</div>
+			<div class="product-description">
+				<p>Kodex es el pack perfecto diseñado para todo tipo de gamers.</p>
+			</div>
+			<div class="product-price">
+				<p class="price-1">34,95€<s style="font-size: 20px;">39,99€</s></p>
+			</div>
+			<div class="product-delivery">
+				<p>¡Resérvalo ya!</p>
+			</div>
+		</div>
+		<div class="product">
+			<div class="product-img">
+				<img src="img/khami.png">
+			</div>
+			<div class="product-tittle">
+				<p>Krom Khami</p>
+			</div>
+			<div class="product-description">
+				<p>Inmersión absoluta y rendimiento para adelantarte a cualquier jugada.</p>
+			</div>
+			<div class="product-price">
+				<p class="price-1">23€<s style="font-size: 20px;">26€</s></p>
+			</div>
+			<div class="product-delivery">
+				<p>¡Resérvalo ya!</p>
+			</div>
+		</div>
+		<div class="product">
+			<div class="product-img">
+				<img src="img/24mk400h.jpg">
+			</div>
+			<div class="product-tittle">
+				<p>LG 24" FullHD 1ms</p>
+			</div>
+			<div class="product-description">
+				<p>Adelántate a tus enemigos con 1ms de tiempo de respuesta.</p>
+			</div>
+			<div class="product-price">
+				<p class="price-1">109€<s style="font-size: 20px;">124€</s></p>
+			</div>
+			<div class="product-delivery">
+				<p>¡Resérvalo ya!</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="action-bar">
+		<div class="logo c5">
+			<img src="img/logo.png">
+		</div>
+		<div class="whatsapp" onclick="openwhatsapp()">
+			<i class="fab fa-whatsapp"></i>
+		</div>
+		<div class="maps" onclick="openmaps()">
+			<i class="material-icons md-18">directions</i>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function openmaps() {
+			if ((navigator.platform.indexOf("iPhone") != -1) ||
+				(navigator.platform.indexOf("iPad") != -1) ||
+				(navigator.platform.indexOf("iPod") != -1)) {
+				window.open(
+					"maps:https://www.google.es/maps/place/CubikSystems/@36.1715057,-5.3528068,15z/data=!4m2!3m1!1s0x0:0xa16b06581d676a29?ved=2ahUKEwjB6cGigK_eAhVJIMAKHfeGBa4Q_BIwD3oECAMQCA"
+				);
+			} else {
+				window.open(
+					"https://www.google.es/maps/place/CubikSystems/@36.1715057,-5.3528068,15z/data=!4m2!3m1!1s0x0:0xa16b06581d676a29?ved=2ahUKEwjB6cGigK_eAhVJIMAKHfeGBa4Q_BIwD3oECAMQCA"
+				);
+			}
+		}
+
+		function openwhatsapp() {
+			window.open("https://api.whatsapp.com/send?phone=+34603030030");
+		}
+	</script>
+</body>
+
+</html>
