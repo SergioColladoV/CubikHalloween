@@ -2,8 +2,7 @@
 WebSite for Cubiksystems Halloween Sales - 2018
 
 ## Desktop Version
-![Desktop Version](/img/desktopimg.png)
+<img src="./img/desktopimg.png" width="100%" alt="Desktop Version">
 
 ## Mobile Version
-![Mobile Version](/img/mobileimg.png | width=50)
-
+<img src="./img/mobileimg.png" width="30%" alt="Mobile Version">
